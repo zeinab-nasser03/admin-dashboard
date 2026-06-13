@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside id="sidebar">
+
+        <div class="top">
+            <h2>Task3</h2>
+
+            <button id="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar">
+
+            <a href="#" class="active">
+                <i class="fas fa-th-large"></i>
+                <h3>Dashboard</h3>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-user"></i>
+                <h3>Customers</h3>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-box"></i>
+                <h3>Orders</h3>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-chart-line"></i>
+                <h3>Analytics</h3>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-envelope"></i>
+                <h3>Messages</h3>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-cube"></i>
+                <h3>Products</h3>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-file"></i>
+                <h3>Reports</h3>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-cog"></i>
+                <h3>Settings</h3>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-sign-out-alt"></i>
+                <h3>Logout</h3>
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main>
+
+        <h1>Dashboard</h1>
+
+        <div class="date">
+            <input type="date">
+        </div>
+
+        <!-- Cards -->
+
+        <div class="insights">
+
+            <div class="card sales">
+                <div class="icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Sales</h3>
+                        <h1>$25,024</h1>
+                    </div>
+
+                    <div class="percentage">
+                        81%
+                    </div>
+                </div>
+
+                <small>Last 24 Hours</small>
+            </div>
+
+            <div class="card expenses">
+                <div class="icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Expenses</h3>
+                        <h1>$14,160</h1>
+                    </div>
+
+                    <div class="percentage">
+                        62%
+                    </div>
+                </div>
+
+                <small>Last 24 Hours</small>
+            </div>
+
+            <div class="card income">
+                <div class="icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Income</h3>
+                        <h1>$10,864</h1>
+                    </div>
+
+                    <div class="percentage">
+                        44%
+                    </div>
+                </div>
+
+                <small>Last 24 Hours</small>
+            </div>
+
+        </div>
+
+        <!-- Product management -->
+
+        <section class="products">
+
+            <div class="products-header">
+
+                <h2>Products Management</h2>
+
+                <button id="openModal">
+                    Add Product
+                </button>
+
+            </div>
+
+            <input
+                type="text"
+                id="searchProduct"
+                placeholder="Search Product">
+
+            <table id="productTable">
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>iPhone 15</td>
+                        <td>$999</td>
+                        <td>Electronics</td>
+                        <td>
+                            <button class="deleteBtn">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Nike Shoes</td>
+                        <td>$120</td>
+                        <td>Fashion</td>
+                        <td>
+                            <button class="deleteBtn">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Right Panel -->
+
+    <div class="right">
+
+        <div class="top">
+
+            <button id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="theme-toggler">
+
+                <span id="light-mode">
+                    ☀️
+                </span>
+
+                <span id="dark-mode">
+                    🌙
+                </span>
+
+            </div>
+
+            <div class="profile">
+
+                <div class="info">
+                    <p>Hey, <b>Lara</b></p>
+                    <small>Admin</small>
+                </div>
+
+                <div class="profile-photo">
+                    <img
+                    src="https://i.pravatar.cc/50"
+                    alt="profile">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Recent Updates -->
+
+        <div class="recent-updates">
+
+            <h2>Recent Updates</h2>
+
+            <div class="update">
+                <p>
+                    Ali received his order.
+                </p>
+            </div>
+
+            <div class="update">
+                <p>
+                    Diana received her package.
+                </p>
+            </div>
+
+            <div class="update">
+                <p>
+                    Mohammad purchased a new drone.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Sales Analytics -->
+
+        <div class="sales-analytics">
+
+            <h2>Sales Analytics</h2>
+
+            <div class="item online">
+                <h3>Online Orders</h3>
+                <small>3849</small>
+            </div>
+
+            <div class="item offline">
+                <h3>Offline Orders</h3>
+                <small>1100</small>
+            </div>
+
+            <div class="item customers">
+                <h3>New Customers</h3>
+                <small>849</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">
+            &times;
+        </span>
+
+        <h2>Add Product</h2>
+
+        <form id="productForm">
+
+            <input
+                type="text"
+                id="productName"
+                placeholder="Product Name">
+
+            <input
+                type="number"
+                id="productPrice"
+                placeholder="Price">
+
+            <select id="productCategory">
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option>
+                    Electronics
+                </option>
+
+                <option>
+                    Fashion
+                </option>
+
+                <option>
+                    Books
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Save Product
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
